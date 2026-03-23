@@ -7,7 +7,6 @@ My solutions and projects from the [100 Days of Code: The Complete Python Pro Bo
 | Day | Project | Topics |
 |-----|---------|--------|
 | 12  | [Guess the Game](./day-12/) | Global and local scope, functions, loops |
-|-----|---------|--------|
 | 14  | [Higher or Lower Game](./day-14/) | Functions, loops, randomization, OS module |
 
 ## About
