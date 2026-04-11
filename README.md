@@ -10,6 +10,7 @@ My solutions and projects from the [100 Days of Code: The Complete Python Pro Bo
 | 14  | [Higher or Lower Game](./day-14/) | Functions, loops, randomization, OS module |
 | 15  | [Coffee Machine](./day-15/) | Single Responsibility Principle, Tuple Unpacking |
 | 16  | [Coffee Machine - OOP](./day-16/) | Object Oriented Programming, Intro |
+| 17  | [Trivia Quiz](./day-17/) | Object Oriented Programming, Class Definition and Object Creation |
 
 ## About
 
