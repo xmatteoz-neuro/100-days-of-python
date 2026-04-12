@@ -1,21 +1,57 @@
-# 100 Days of Code: Python
+# Day 18 – Hirst Painting Generator 🎨
 
-My solutions and projects from the [100 Days of Code: The Complete Python Pro Bootcamp](https://www.udemy.com/course/100-days-of-code/) by Angela Yu (Udemy).
+A Python project that recreates a Hirst-style dot painting by extracting colors from an image and rendering them on screen using the `turtle` module.
 
-## Progress
+## Project structure
 
-| Day | Project | Topics |
-|-----|---------|--------|
-| 12  | [Guess the Game](./day-12/) | Global and local scope, functions, loops |
-| 14  | [Higher or Lower Game](./day-14/) | Functions, loops, randomization, OS module |
-| 15  | [Coffee Machine](./day-15/) | Single Responsibility Principle, Tuple Unpacking |
-| 16  | [Coffee Machine - OOP](./day-16/) | Object Oriented Programming, Intro |
-| 17  | [Trivia Quiz](./day-17/) | Object Oriented Programming, Class Definition and Object Creation |
+```
+day-18/
+├── main.py        # Entry point — draws the dot grid
+├── painting.py    # Color extraction from image using colorgram
+└── image.jpg      # Source image for color palette
+```
 
-## About
+## How it works
 
-This repository tracks my journey through the 100 Days of Code challenge. Each folder contains the project for that day.
+1. **`painting.py`** uses `colorgram` to extract the 10 most dominant colors from `image.jpg` and stores them as a list of RGB dictionaries.
+2. **`main.py`** prompts the user for a step size and dot size, then uses `turtle` to draw a square grid of randomly colored dots, picking from the extracted palette.
 
----
+## Requirements
 
-*All exercises and projects are based on the course material by Angela Yu.*
+Install dependencies with:
+
+```bash
+pip install colorgram.py
+```
+
+`turtle` is part of Python's standard library — no extra install needed.
+
+## Usage
+
+1. Place a `image.jpg` file in the project directory (this is the source for the color palette).
+2. Run:
+
+```bash
+python main.py
+```
+
+3. Enter the **step size** (spacing between dots) and **dot size** (diameter of each dot) when prompted.
+   - If `dot_size > step_size`, the dot size is automatically capped to the step size to avoid overlaps.
+4. Click anywhere on the turtle window to close it.
+
+## Parameters
+
+| Parameter   | Description                                  | Suggested values |
+|-------------|----------------------------------------------|------------------|
+| `STEP_SIZE` | Distance between dot centers (pixels)        | 40–80            |
+| `DOT_SIZE`  | Diameter of each dot (pixels)                | 10–30            |
+
+## Example output
+
+A grid of colored dots fills an 800×800 pixel canvas, with colors randomly sampled from the palette extracted from your source image — inspired by Damien Hirst's *Spot Paintings*.
+
+## Notes
+
+- The canvas spans from `(-400, -400)` to `(+400, +400)`, giving an 800×800 area.
+- The number of dots per row/column is computed automatically based on `STEP_SIZE`.
+- Colors are selected randomly on each run, so every execution produces a unique result.
