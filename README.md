@@ -12,7 +12,7 @@ My solutions and projects from the [100 Days of Code: The Complete Python Pro Bo
 | 16  | [Coffee Machine - OOP](./day-16/) | Object Oriented Programming, Intro |
 | 17  | [Trivia Quiz](./day-17/) | Object Oriented Programming, Class Definition and Object Creation |
 | 18  | [Turtle Artwork](./day-18/) | GUI Manipulation with Classes and Objects |
-| 18  | [Turtle Race](./day-19/) | Nested Functions and multiple Objects Instances |
+| 19  | [Turtle Race](./day-19/) | Nested Functions and multiple Objects Instances |
 
 ## About
 
